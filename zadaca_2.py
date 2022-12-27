@@ -24,21 +24,21 @@ number_2 = int(input("Enter the second number: "))
 operation = input("Enter an operation (+, -, *, /): ")
 
 if operation == "+":
-    result = number_1 + number_2
+     result = number_1 + number_2
 elif operation == "-":
-    result = number_1 - number_2
+     result = number_1 - number_2
 elif operation == "*":
     result = number_1 * number_2
 elif operation == "/":
-    if number_2 == 0:
-        print("Error: Cannot divide by 0")
-    else:
-        result = number_1 / number_2
+   if number_2 == 0:
+      print("Error: Cannot divide by 0")
+   else:
+      result = number_1 / number_2
 else:
-    print("Error: Invalid operation")
+       print("Error: Invalid operation")
 
 if "result" in locals():
-    print(f"Result: {result}")
+     print(f"Result: {result}")
 
 # Write a program that loads a sentence.
 # If there is a word "red" in the sentence then check if the last word in the sentence is "pill", and output "Accept life-changing facts". 
@@ -53,11 +53,11 @@ treci_uvijet ='pilula'
 
 
 
-if sentence_1 == prvi_uvijet:
+if prvi_uvijet in sentence_1 and treci_uvijet in sentence_1:
     print('Accept life-changing facts')
-elif sentence_1 == drugi_uvijet:
+elif prvi_uvijet in sentence_1nd treci_uvijet in sentence_1:
     print('Remain ignorant')
-else:
+else prvi_uvijet in sentence_1 and prvi_uvijet in sentence_1 and treci_uvijet in not sentence_1:
     print('Red and blue are colors')
 
 '''
@@ -73,102 +73,6 @@ else:
 '''
 #ovo radi ali mislim da nije dovoljno dobro jer ne daje mogucnost napisati npr crveno zuta pilula------------------------
 
-'''crvena=True
-plava=True
-pilula=True
-
-if crvena and pilula:
-    print('Accept life-changing facts')
-elif plava== True and pilula== True:
-    print('Remain ignorant')
-else:
-    print('Red and blue are colors')'''
-
-
-#-------------- ne valja
-
-'''sentence_1 = input("Unesi rečenicu: ")
-
-crvena=True
-plava=True
-pilula=True
-
-
-if crvena and pilula:
-    print('Accept life-changing facts')
-elif plava and pilula:
-    print('Remain ignorant')
-else:
-    print('Red and blue are color')
-'''
-#-------------- ne valja
-
-'''
-sentence_1 = input("Unesi rečenicu: ")
-test_words = ['crvena', 'plava', 'pilula']
-contains_1 = [0,1] 
-contains_2 = [0,2]
-
-for string in sentence_1:
-    for test_word in test_words:
-        if test_word not in string.split():
-            contains_1 = False
-            break           
-    if not contains_1 :
-        break
-
-for string in sentence_1:
-    for test_word in test_words:
-        if test_word not in string.split():
-            contains_2 = False
-            break           
-    if not contains_2 :
-        break
-
-if contains_1  :
-    print("Accept life-changing facts")
-if contains_2  :
-    print("Remain ignorant")
-else:
-    print("Red and blue are color")'''
-
-###--------- ne valja
-'''
-sentence_1 = input("Unesi rečenicu: ")
-crvena=False
-plava=False
-pilula=False
-for elem in sentence_1:
-
-    if "crvena"  and 'pilula' in sentence_1:
-        #crvena and pilula=True
-        print('Accept life-changing facts')
-        
-    elif "plava" and 'pilula'in sentence_1:
-        #motorbike=True
-        print("Remain ignorant")
-        
-   
-    else: 
-        print("Red and blue are color")
-        break'''
-
-#--------- tu radi if i else, elif ne radi
-'''
-str =input("Unesi rečenicu: ")
-myList_1 = ['crvena', 'pilula']
-myList_2 = ['plava', 'pilula']
-
-isMatch_1 = [True for x in myList_1 if x in str]
-isMatch_2 = [True for x in myList_2 if x in str]
-if True in isMatch_1:
-  print("Accept life-changing facts")
-elif True in isMatch_2:
-   print("Remain ignorant")
-else:
-  print("remain ignorant")
-
-###-----------opet ne radi elIF'''
 
 ## UPDATE
 '''
