@@ -96,6 +96,20 @@ print('Characters in first but not second:', first_not_second(s1, s2))
 print('Characters without intersection:', no_intersection(s1, s2))
 
 
+### DRUGI NACIN KAKO SE JE MOGAO RIJESITI ZADATAK
+s1_set = set(s1)
+s2_set = set(s2)
+
+union = s1_set.union(s2_set)
+intersection = s1_set.intersection(s2_set)
+difference = s1_set.difference(s2_set)
+symdiff = s1_set.symmetric_difference(s2_set)
+
+print(union)
+print(intersection)
+print(difference)
+print(symdiff)
+
 ##PITANJE
 #ovo mi je bilo dost tesko, rijesenje sam uspijela nekako nac na netu al iskreno ni ne kuzim bas sta ovo tocno radi
 
